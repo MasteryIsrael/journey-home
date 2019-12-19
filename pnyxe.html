@@ -1,0 +1,28 @@
+<script>
+function normalizeHostnameForComments(hostname)
+{
+	return hostname.replace("www.","");
+}
+
+function normalizeHashForComments(hash)
+{
+	return hash.replace(/:.+$/,"");
+}
+
+function normalizeLocationForComments(location)
+{
+	var loc=document.createElement("a");
+	loc.href=location;
+	loc.hostname = normalizeHostnameForComments(loc.hostname);
+	loc.hash = normalizeHashForComments(loc.hash);
+	//loc.search = null;
+	loc.search = "";
+	loc.href = loc.href.replace(/\?/,"");
+	return loc;
+}
+
+var zpbw_webWidgetArticleUrl=normalizeLocationForComments(window.location).href;
+</script>
+<span style="display:none;">***</span>
+<script type="text/javascript" language="javascript" id="pnyxeDiscussItInitJs446970">try { var zpbw_webWidgetClientKey = "fud9YeCRQI.zPZdCvDVhTg"; var pnyxeDiscussIt = new PnyxeDiscussIt(); pnyxeDiscussIt.init("446970"); } catch (e) {throw e;}</script>
+<noscript><a href="http://www.pnyxe.co.il/DiscussIt-comment-system?utm_source=wwcCodeSpanPromotion3" rel="nofollow">מערכת תגובות חינם</a></noscript>

@@ -1,0 +1,24 @@
+
+.PublishNewPostsButton img,
+.PublishNewPostsToTwitterCheckBox,
+.PublishNewPostsToFacebookCheckBox, .ThumbsDownImage,
+.PublishExistingPostsButton {display: none !important}
+#adsenseDiv {display: table-footer-group !important;}
+ #WEB_WIDGET_DIV {display: table-row-group}
+#adsenseDiv::before {display:block;font-size:10px;content:'פרסומת מטעם שירות התגובות'; text-align:center;padding-top:10px}
+body {display:table}
+
+@media screen and (max-width: 480px) {
+	#adsenseDiv ins{width:auto !important; max-width:420px !important; min-width:400px !important; overflow:hidden;}
+	#WEB_WIDGET_DIV>div {min-width:0 !important;}
+	
+}
+@media screen and (max-width: 400px) {
+	#adsenseDiv ins{max-width:320px !important; min-width:300px !important;}
+}
+@media screen and (max-width: 320px) {
+	#adsenseDiv ins{max-width:260px !important; min-width:280px !important;}
+}
+@media screen and (max-width: 260px) {
+	#adsenseDiv ins{max-width:240px !important; min-width:220px !important;}
+}
